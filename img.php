@@ -32,6 +32,6 @@ for($i = 0; $i < sizeof($_SESSION['arr_img']) ; $i++ )
 {
 	ImageFilledRectangle($img_create,$arr_img[$i]['lside'],$arr_img[$i]['tside'],$arr_img[$i]['lside'] + $arr_img[$i]['width'],$arr_img[$i]['tside'] + $arr_img[$i]['height'],$color);
 }
-$_SESSION['newpath'] = 'myimg/download'.date('ih').".jpg";
+$_SESSION['newpath'] = 'myimg/create_img'.date('ih').".jpg";
 ImageJPEG($img_create, $_SESSION['newpath']); 
 imagedestroy($img_create);
